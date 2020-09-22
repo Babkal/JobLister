@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/jobs', 'JobController@index');
+
+Route::get('/jobs/{id}', 'JobController@show');
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
