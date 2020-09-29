@@ -19,7 +19,8 @@ Route::get('/', function () {
 
 Route::get('/jobs', 'JobController@index');
 Route::get('/jobs/create', 'JobController@create');
-Route::get('/jobs/{id}', 'JobController@show');
+Route::get('/jobs/{id}', 'JobController@index');
+Route::get('/jobs/detail/{id}', 'JobController@show');
 Route::post('/jobs', 'JobController@store');
 
 Auth::routes();

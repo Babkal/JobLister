@@ -10,7 +10,20 @@ class JobController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('jobs.index', ['categories'=>$categories]);
+        $id = request('category');
+     
+        if(is_null($id) || $id == 0)
+        {
+            $jobs = job::all();
+            return view('jobs.index', ['categories'=>$categories, 'jobs'=>$jobs]);
+            
+        }
+
+        else 
+        {
+            $jobs = job::where('category_id', $id)->get();
+            return view('jobs.index', ['categories'=>$categories, 'jobs'=>$jobs]);
+        }
     }
 
     public function show($id)
@@ -41,6 +54,6 @@ class JobController extends Controller
 
         $job->save();
 
-        return redirect('/');
+        return redirect('jobs');
     }
 }
