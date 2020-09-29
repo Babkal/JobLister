@@ -33,11 +33,16 @@
           <p>{{$job->description}}</p>
         </div>
         <div class="col-md-2">
-          <a class="btn btn-dark" href="job/show{$job->id}">View</a>
+           <form action="jobs/detail/{{$job->id}}" method="get"> <input class="btn btn-dark" type="submit" value="View"></form>
+          
         </div>
         </div>
   </div>
   @endforeach
+
+  @if (is_null($jobs))
+      <h1>Jobs not found!</h1>
+  @endif
 
 {{-- @endif --}}
 

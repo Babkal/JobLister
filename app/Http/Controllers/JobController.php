@@ -21,15 +21,18 @@ class JobController extends Controller
 
         else 
         {
+          
             $jobs = job::where('category_id', $id)->get();
             return view('jobs.index', ['categories'=>$categories, 'jobs'=>$jobs]);
+            
         }
     }
 
     public function show($id)
 
     {
-       return view('jobs.show', ['id'=>$id]);
+        $job = job::where('id', $id)->get();
+       return view('jobs.show', ['jobs'=>$job]);
     }
 
     public function create()

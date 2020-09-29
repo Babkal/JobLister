@@ -25,4 +25,6 @@ Route::post('/jobs', 'JobController@store');
 
 Auth::routes();
 
+
+
 Route::get('/home', 'HomeController@index')->name('home');
