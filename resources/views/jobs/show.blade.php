@@ -32,10 +32,15 @@
     
     <br><br>
     <div class="well">
-    <a href="jobs/edit/{{$job->id}}" class="btn btn-primary">Edit</a>
     
-    <form style="display:inline;" action="job.php">
-    <input type="hidden" name="del_id" value="{{$job->id}}">
+    <form style="display:inline;" action="/jobs/edit/{{$job->id}}" method="get">
+
+    
+    <input  type="submit" class="btn btn-primary" name="edit" value="Edit">
+    </form>
+    <form style="display:inline;" action="/jobs/delete/{{$job->id}}" method="delete">
+        @csrf
+        @method('DELETE')
     <input type="submit" value="Delete" class="btn btn-danger"></form>
     
     </div>

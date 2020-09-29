@@ -3,6 +3,19 @@
 @section('content')
 
 <div class="container">
+   @if (session('mssg'))
+   <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong> 
+        {{ session('mssg') }} holla</strong> 
+        
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+  @endif
+   
+      
+
    
 
    <div class="jumbotron">
@@ -24,9 +37,7 @@
 @foreach ($jobs as $job)
     
   <div>
-         
-<h3>{{$category->name}}</h3>
-     
+          
       <div class="row marketing">
         <div class="col-md-10">
           <h4>{{$job->job_title}}</h4>
