@@ -32,7 +32,7 @@
     
     <br><br>
     <div class="well">
-    
+    <div class="d-flex justify-content-between">
     <form style="display:inline;" action="/jobs/edit/{{$job->id}}" method="get">
 
     
@@ -42,7 +42,7 @@
         @csrf
         @method('DELETE')
     <input type="submit" value="Delete" class="btn btn-danger"></form>
-    
+</div>
     </div>
     @endforeach
 

@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'JobController@index');
 
 Route::get('jobs', 'JobController@index');
 Route::get('jobs/create', 'JobController@create');

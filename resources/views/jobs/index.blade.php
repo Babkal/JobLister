@@ -5,9 +5,9 @@
 
 @if (session('message'))
 
-   <div class="alert alert-warning alert-dismissible fade show" role="alert">
+   <div class="alert alert-danger alert-dismissible fade show" role="alert">
       <strong> 
-        {{ session('message')}} holla</strong> 
+        {{ session('message')}}</strong> 
         
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
          <span aria-hidden="true">&times;</span>
@@ -24,14 +24,19 @@
     <form method="get" action="jobs">
       @csrf
       <select name="category" class="form-control">
-        <option value="0">@if($category_name)
-            {{$category_name}}
+        <option value="0">
+          @if($category_name ?? '')
+            {{$category_name ?? ''}}
           @else
             Choose Category
            @endif </option>
-        @foreach ($categories as $category)
-      <option value="{{$category->id}}">{{$category->name}}</option>
-      @endforeach
+           
+           @foreach ($categories as $category)
+           @unless ($category->name == $category_name)
+           <option value="{{$category->id}}">{{$category->name}}</option>
+           @endunless
+           @endforeach
+
       </select>
       <br>
       <input class="btn btn-success" type="submit" value="FIND">
