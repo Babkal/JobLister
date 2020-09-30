@@ -38,7 +38,7 @@
     
     <input  type="submit" class="btn btn-primary" name="edit" value="Edit">
     </form>
-    <form style="display:inline;" action="/jobs/delete/{{$job->id}}" method="delete">
+    <form style="display:inline;" action="/jobs/delete/{{$job->id}}" method="post">
         @csrf
         @method('DELETE')
     <input type="submit" value="Delete" class="btn btn-danger"></form>

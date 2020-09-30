@@ -17,14 +17,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/jobs', 'JobController@index');
-Route::get('/jobs/create', 'JobController@create');
-Route::get('/jobs/{id}', 'JobController@index');
-Route::get('/jobs/detail/{id}', 'JobController@show');
-Route::post('/jobs', 'JobController@store');
-Route::get('/jobs/edit/{id}', 'JobController@edit');
-Route::put('/jobs/update/{id}', 'JobController@update');
-Route::delete('/jobs/delete/{id}', 'JobController@destroy');
+Route::get('jobs', 'JobController@index');
+Route::get('jobs/create', 'JobController@create');
+Route::get('jobs/{id}', 'JobController@index');
+Route::get('jobs/detail/{id}', 'JobController@show');
+Route::post('jobs', 'JobController@store');
+Route::get('jobs/edit/{id}', 'JobController@edit');
+Route::put('jobs/update/{id}', 'JobController@update');
+Route::delete('jobs/delete/{id}', 'JobController@destroy');
+
+Route::get('jobs/empty', function(){
+    return view('empty');
+});
+
+
 
 
 Auth::routes();

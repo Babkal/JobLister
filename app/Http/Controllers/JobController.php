@@ -12,19 +12,27 @@ class JobController extends Controller
     {
         $categories = Category::all();
         $id = request('category');
+        $category = Category::select('name')->where('id', $id)->first();
+        $jobs = job::where('category_id', $id)->get();
+        $category_name = $category['name'];
      
-        if(is_null($id) || $id == 0)
+        if(is_null($id) || $id == 0 )
         {
             $jobs = job::all();
-            return view('jobs.index', ['categories'=>$categories, 'jobs'=>$jobs]);
+            return view('jobs.index', ['categories'=>$categories, 'jobs'=>$jobs, 'category_name'=>$category_name]);
             
         }
 
-        else 
+       
+        else if(!$id == 0 && !$jobs->isEmpty())
+        {
+            return view('jobs.index', ['categories'=>$categories, 'jobs'=>$jobs, 'category_name'=>$category_name]);
+        }
+        else if($jobs->isEmpty())
         {
           
-            $jobs = job::where('category_id', $id)->get();
-            return view('jobs.index', ['categories'=>$categories, 'jobs'=>$jobs]);
+            return view('jobs/empty', ['categories'=>$categories], ['NotFoundMssg'=> $category['name']]);
+            
             
         }
     }
@@ -88,7 +96,7 @@ public function update($id)
 
     $job->save();
 
-    return redirect('jobs,index')->with('mssg','Updated successfull');
+    return redirect('jobs,index')->with('message','Updated successfully');
 
 }
 
@@ -97,7 +105,7 @@ public function destroy($id)
     $job = job::findOrFail($id);
     $job->delete();
 
-    return redirect('jobs')->with('message', 'Deleted successfull');
+    return redirect('jobs')->with('message', 'Deleted successfully');
 
 }
 }
