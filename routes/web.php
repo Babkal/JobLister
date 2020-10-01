@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'JobController@index');
 
 Route::get('jobs', 'JobController@index');
-Route::get('jobs/create', 'JobController@create');
+Route::get('jobs/create', 'JobController@create')->middleware('auth');
 Route::get('jobs/{id}', 'JobController@index');
 Route::get('jobs/detail/{id}', 'JobController@show');
 Route::post('jobs', 'JobController@store');
-Route::get('jobs/edit/{id}', 'JobController@edit');
-Route::put('jobs/update/{id}', 'JobController@update');
-Route::delete('jobs/delete/{id}', 'JobController@destroy');
+Route::get('jobs/edit/{id}', 'JobController@edit')->middleware('auth');;
+Route::put('jobs/update/{id}', 'JobController@update')->middleware('auth');;
+Route::delete('jobs/delete/{id}', 'JobController@destroy')->middleware('auth');;
 
 Route::get('jobs/empty', function(){
     return view('empty');

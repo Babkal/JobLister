@@ -3,7 +3,6 @@
 @section('content')
 <div class="w-full max-w-xs">
 
-<h1>{{$job_category_name}}</h1>
     <div class="container">
         @foreach ($jobs as $job)
 
