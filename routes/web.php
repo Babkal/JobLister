@@ -31,7 +31,9 @@ Route::get('jobs/empty', function(){
 
 
 
-Auth::routes();
+Auth::routes([
+    'register'=>false
+]);
 
 
 
