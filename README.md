@@ -1,2 +1,2 @@
 ## joblistings
-#### A simple website I built using Laravel
+#### A simple job listings website I built using Laravel.
