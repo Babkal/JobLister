@@ -1,5 +1,5 @@
 # JobLister
-#### A simple job search website I built using Laravel.
+#### A simple job search website.
 
 ## Table of Contents
 
