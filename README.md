@@ -4,7 +4,7 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+* [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -27,3 +27,8 @@ JobLister has the following features:
 * Update job listing
 * Delete job listing
 * Register as a user
+
+### Built With
+* [Laravel](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
