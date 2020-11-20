@@ -38,9 +38,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@bab_kal](https://twitter.com/bab_kal)
+[Beabkal](https://twitter.com/bab_kal)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+[https://github.com/Babkal/JobLister](https://github.com/Babkal/JobLister)
 
 ## Acknowledgements
 
