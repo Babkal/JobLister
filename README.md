@@ -5,7 +5,7 @@
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
-* [Getting Started](#getting-started)
+* [Features](#features)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
@@ -21,14 +21,15 @@ I have built this project as a practice project while I was learning Laravel. Jo
 
 JobLister has the following features:
 
+### Built With
+* [Laravel](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+
+### Features
 * Job searchs using the different types of job categories available
 * Providing job details including company address and post date
 * Create new job listings
 * Update job listing
 * Delete job listing
 * Register as a user
-
-### Built With
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
