@@ -6,11 +6,9 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Features](#features)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
+* [License](#license)
 * [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
 
 
@@ -33,3 +31,22 @@ JobLister has the following features:
 * Update job listing
 * Delete job listing
 * Register as a user
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@bab_kal](https://twitter.com/bab_kal)
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+## Acknowledgements
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [Font Awesome](https://fontawesome.com)
+* [Laravel](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+
