@@ -1,5 +1,5 @@
 # JobLister
-#### A simple job listings website I built using Laravel.
+#### A simple job search website I built using Laravel.
 
 ## Table of Contents
 
@@ -15,9 +15,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-I have built this project as a practice project while I was learning Laravel. JobLister is a simple job listing website where companies can post job vacancies and job seekers can find jobs in specific categories.
+I have built this project as a practice project while I was learning Laravel. JobLister is a simple job search website where companies can post job vacancies and job seekers can find jobs in specific categories.
 
-Some new concepts I have learned while builiding JobLister:
+#### Some new concepts I have learned while builiding JobLister:
 * The MVC architecture
 * Database migration
 * Authentication and Autherization
@@ -29,7 +29,7 @@ Some new concepts I have learned while builiding JobLister:
 * [JQuery](https://jquery.com)
 
 ### Features
-* Job searchs using the different types of job categories available
+* Job searchs using different types of job categories available
 * Providing job details including company address and post date
 * Create new job listings
 * Update job listing
@@ -48,9 +48,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgements
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [Font Awesome](https://fontawesome.com)
 * [Laravel](https://laravel.com)
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-
+* [Choose an Open Source License](https://choosealicense.com)
+* [Font Awesome](https://fontawesome.com)
