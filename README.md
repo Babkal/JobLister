@@ -17,7 +17,11 @@
 
 I have built this project as a practice project while I was learning Laravel. JobLister is a simple job listing website where companies can post job vacancies and job seekers can find jobs in specific categories.
 
-JobLister has the following features:
+Some new concepts I have learned while builiding JobLister:
+* The MVC architecture
+* Database migration
+* Authentication and Autherization
+* Routing
 
 ### Built With
 * [Laravel](https://laravel.com)
